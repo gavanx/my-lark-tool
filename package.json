@@ -1,0 +1,17 @@
+{
+  "name": "my-lark-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w --p src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.11.0",
+    "@types/node": "14.18.0",
+    "typescript": "next"
+  }
+}
