@@ -1,5 +1,5 @@
 const lark = require('@larksuiteoapi/node-sdk');
-const token = require('../../token.json')
+const token = require('../../../token.json')
 
 const client = new lark.Client({
   appId: token.id,
@@ -8,7 +8,9 @@ const client = new lark.Client({
   domain: lark.Domain.Feishu,
 });
 
-client.drive.file.list({},
+client.drive.file.list({
+  folder_token: "nodcnoRPMCtn5NRUtSdUkTE5VUd"
+},
 	lark.withTenantToken("t-g0042hf7C7UIUMNWBADJGPPDIJDZT75HQ5UXA7IK")
 ).then(res => {
 	console.log(res);

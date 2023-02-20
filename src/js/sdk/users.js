@@ -1,5 +1,5 @@
 const lark = require("@larksuiteoapi/node-sdk");
-const token = require("../../token.json");
+const token = require("../../../token.json");
 
 const client = new lark.Client({
   appId: token.id,

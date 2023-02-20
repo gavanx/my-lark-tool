@@ -17,4 +17,3 @@ for await (const items of await client.contact.user.listWithIterator({
 })) {
   console.log(items);
 }
-
