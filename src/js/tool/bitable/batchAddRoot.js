@@ -1,5 +1,5 @@
 const files = require('../../../../data/root/root-files.json').data.files
-const books = require('../getAllBookNames')()
+const books = require('./getAllBookNamesInTable')()
 const bookArr = [...books]
 
 const startStr = '《'
