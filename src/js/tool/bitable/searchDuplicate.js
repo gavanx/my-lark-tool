@@ -1,7 +1,7 @@
 let arr = [];
 for (const i of [1, 2, 3]) {
   arr = arr.concat(
-    require(`../../../data/bitable/list-500-${i}.json`).data.items
+    require(`../../../../data/bitable/list-500-${i}.json`).data.items
   );
 }
 
@@ -11,5 +11,5 @@ function duplicates(arr) {
   );
 }
 
-console.log(duplicates(arr.map(item => item.fields['书名'])));
+console.log(duplicates(arr.map(item => item.fields['书名'].trim())));
 
