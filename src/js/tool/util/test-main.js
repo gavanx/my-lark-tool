@@ -13,4 +13,8 @@ const rawNameSet = new Set(r.map(f => f.name))
 console.log(rawNameSet.size)
 
 r = filterAddingRecords(r, bookSet, false)
-console.log(r.map(r => r.fields['书名']).join('\n'))
+r = r.slice(1000)
+console.log(r.map(r => r.fields['书名']).join('\n'), r.length)
+
+const batchAdd = require('../../http/bitable/batch-add')
+batchAdd(r)
