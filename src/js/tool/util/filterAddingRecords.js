@@ -1,4 +1,4 @@
-const filterFiles = require("./filterBookFiles");
+const filterFiles = require("./filterAddingBooks");
 
 const filterAddingRecords = (files, nameSet, strict) => {
   let r = filterFiles(files, nameSet, strict)

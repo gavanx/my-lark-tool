@@ -27,4 +27,4 @@ const filterBookFiles = (files, nameSet, strict) => {
   return r
 }
 
-module.exports = filterFiles
+module.exports = filterBookFiles
