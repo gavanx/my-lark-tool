@@ -1,4 +1,4 @@
-const filterFiles = (files, nameSet, strict) => {
+const filterBookFiles = (files, nameSet, strict) => {
   const startStr = '《'
   const endStr = strict ? '》：' : '》'
   let r = []

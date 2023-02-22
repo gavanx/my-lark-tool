@@ -8,5 +8,5 @@ const generatePaths = (base, pageCount) => {
 
 module.exports = generatePaths
 
-const r = generatePaths('../../../../data/tingshu/tingshub-books-200', 8)
-console.log(r, r.length)
+// const r = generatePaths('../../../../data/tingshu/tingshub-books-200', 8)
+// console.log(r, r.length)
